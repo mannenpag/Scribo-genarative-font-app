@@ -1,3 +1,24 @@
+//PROCESSING APP FOR USERS TO DRAW A COLLABORATIVE TYPEFACE
+
+// CREATORS
+// 2019 Gustav Bodin, Chiara Martini, Ida Ström
+// Academy of Art University 
+// Instructor Colin Sebestyen
+
+/*
+ * MOUSE / Wacom Tablet
+ * left click           : set points
+ *
+ * KEYS
+ * left arrow           : clear drawing box 
+ * right arrow          : save letter
+ * backspace            : delete user input string
+ * enter                : save string to data structure / display bellow
+ * a-z                  : add letter to user input string and display the drawn letter
+ */
+
+
+
 //Strings
 String buildString = "";
 String[] allStrings = {};
