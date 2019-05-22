@@ -1,7 +1,7 @@
 //Instructions
 String displayLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-//Lables
+//Prompts
 String left = "_Test";
 String instructionsLeft = "Type to test";
 
