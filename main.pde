@@ -1,21 +1,21 @@
-//PROCESSING APP FOR USERS TO DRAW A COLLABORATIVE TYPEFACE
+//  PROCESSING APP FOR USERS TO DRAW A COLLABORATIVE TYPEFACE
 
-// CREATORS
-// 2019 Gustav Bodin, Chiara Martini, Ida Ström
-// Academy of Art University 
-// Instructor Colin Sebestyen
+//  CREATORS
+//  2019 Gustav Bodin, Chiara Martini, Ida Ström
+//  Academy of Art University 
+//  Instructor Colin Sebestyen
 
 /*
- * MOUSE / Wacom Tablet
- * left click           : set points
- *
- * KEYS
- * left arrow           : clear drawing box 
- * right arrow          : save letter
- * backspace            : delete user input string
- * enter                : save string to data structure / display bellow
- * a-z                  : add letter to user input string and display the drawn letter
- */
+    * MOUSE / WACOM
+    * left click           : set points
+    *
+    * KEYS
+    * left arrow           : clear drawing box 
+    * right arrow          : save letter
+    * backspace            : delete user input string
+    * enter                : save string to data structure / display bellow
+    * a-z                  : add letter to user input string and display the drawn letter
+*/
 
 
 
@@ -66,12 +66,7 @@ void setup() {
     size(3840, 768);
     background(10);
     noCursor();
-
-    //PImage cursor;
-    //cursor = loadImage("data/cursor.png");
-
-    //cursor(cursor, round(30), round(30));
-
+    
     //Font
     h1Font = createFont("data/font/IBMPlexMono-ExtraLight.ttf", 30, true);
     h2Font = createFont("data/font/IBMPlexMono-ExtraLight.ttf", 25, true);
@@ -190,7 +185,6 @@ void showText(String userString) {
         switchString = true;
         //On delete remove last index
         if (keyCode == 8) {
-            //buildString.remove(i);
             buildString = "";
             CanvasRefresh();
         }
@@ -296,10 +290,6 @@ void CanvasRefresh() {
     setInstructions();
     showName();
     grid(width - (width / 3));
-
-    //if (frameCount % 60 == 0){
-    //    background(10);
-    //}
 
     if (frameCount % 60 == 0 && !isTyping) {
         stroke(255);
