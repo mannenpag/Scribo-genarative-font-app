@@ -13,7 +13,6 @@ class Letter {
         w = _w;
         h = _h;
 
-
         if (alphabetCount == 0) {
             img = loadImage("data/letters/" + 0 + "/" + s + ".png");
         } else if (alphabetCount == 1) {
